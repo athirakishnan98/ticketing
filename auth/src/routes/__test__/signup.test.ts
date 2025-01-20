@@ -42,7 +42,7 @@ it("returns a 400 with missing email & password", async () => {
   await request(app)
     .post("/api/users/signup")
     .send({
-      password: "password",
+      password: "alskjdf",
     })
     .expect(400);
 });
